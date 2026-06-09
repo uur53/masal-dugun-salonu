@@ -1,0 +1,7 @@
+[build]
+buildCommand = "npx prisma migrate deploy && npx prisma db seed && npm run build"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/"
+restartPolicyType = "on_failure"
