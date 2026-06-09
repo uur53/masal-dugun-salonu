@@ -3,6 +3,6 @@ builder = "NIXPACKS"
 buildCommand = "npm run build"
 
 [deploy]
-startCommand = "npx prisma migrate deploy && npx prisma db seed && npm start"
+startCommand = "npm run railway:start"
 healthcheckPath = "/"
 restartPolicyType = "on_failure"
